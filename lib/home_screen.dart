@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:math_expressions/math_expressions.dart';
 import 'package:realcalculator/constants.dart';
-
 import 'components/my_button.dart';
+
 
 
 class HomeScreen extends StatefulWidget {
@@ -64,7 +64,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         } ,),
-                        MyButton( title: '+/-', onpress: (){
+                        MyButton( title: '+/-', onpress:  (){
                           userInput += '+/-';
                           setState(() {
 
