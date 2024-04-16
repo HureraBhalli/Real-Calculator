@@ -17,6 +17,7 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
 
 
+
   var userInput = '';
   var answer = '';
   
@@ -42,7 +43,7 @@ class _HomeScreenState extends State<HomeScreen> {
                          alignment: Alignment.bottomRight,
                           child: Text(userInput.toString(), style: TextStyle(fontSize: 50, color: Colors.white),)),
 
-                      SizedBox(
+                     const SizedBox(
                         height: 15,
                       ),
                       Text(answer.toString(), style: TextStyle(fontSize: 40, color: Colors.white),)
@@ -64,6 +65,7 @@ class _HomeScreenState extends State<HomeScreen> {
 
                           });
                         } ,),
+
                         MyButton( title: '+/-', onpress:  (){
                           userInput += '+/-';
                           setState(() {
@@ -206,15 +208,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
 
 
-
-
-
-
-
-            SizedBox(
+          const  SizedBox(
               height: 20,
             ),
-
 
 
             ],
